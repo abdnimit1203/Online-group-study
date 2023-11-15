@@ -42,17 +42,17 @@ export const router = createBrowserRouter([
         {
           path: "/details/:id",
           element: <PrivateRoutes><Details></Details></PrivateRoutes>,
-          loader: ({params})=>fetch(`https://collabora-task-server.vercel.app/api/v1/assignments/${params.id}`)
+          loader: ({params})=>fetch(`https://online-group-study-ab-server.vercel.app/api/v1/assignments/${params.id}`)
         },
         {
           path: "/update-assignment/:id",
           element: <PrivateRoutes><UpdateAssignment></UpdateAssignment></PrivateRoutes>,
-          loader: ({params})=>fetch(`https://collabora-task-server.vercel.app/api/v1/assignments/${params.id}`)
+          loader: ({params})=>fetch(`https://online-group-study-ab-server.vercel.app/api/v1/assignments/${params.id}`)
         },
         {
           path: "/grading/:id",
           element: <PrivateRoutes><Grading></Grading></PrivateRoutes>,
-          loader: ({params})=>fetch(`https://collabora-task-server.vercel.app/api/v1/submitted-assignments/${params.id}`)
+          loader: ({params})=>fetch(`https://online-group-study-ab-server.vercel.app/api/v1/submitted-assignments/${params.id}`)
         },
         {
           path: "/my-assignments",

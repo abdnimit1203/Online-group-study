@@ -18,7 +18,7 @@ const Chats = () => {
   const { data, isLoading, isFetching } = useQuery({
     queryKey: ["chats", newMessage],
     queryFn: async () => {
-      const data = await fetch(`https://collabora-task-server.vercel.app/api/v1/chats`);
+      const data = await fetch(`https://online-group-study-ab-server.vercel.app/api/v1/chats`);
       return await data.json();
     },
   });
@@ -47,7 +47,7 @@ const Chats = () => {
 
     //post chat message
     axios
-      .post("https://collabora-task-server.vercel.app/api/v1/chats", chatData)
+      .post("https://online-group-study-ab-server.vercel.app/api/v1/chats", chatData)
       .then((res) => {
         console.log(res.data);
         toast("message sent! 👍🏻");

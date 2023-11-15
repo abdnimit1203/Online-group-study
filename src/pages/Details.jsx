@@ -69,7 +69,7 @@ const handleDisabled=() =>{
     handleDisabled()
     axios
       .post(
-        "https://collabora-task-server.vercel.app/api/v1/submitted-assignments",
+        "https://online-group-study-ab-server.vercel.app/api/v1/submitted-assignments",
         submittedData,
       )
       .then((res) => {

@@ -26,7 +26,7 @@ const handleSubmit =async (e)=>{
         status
     }
     console.log(submitMarkData);
-    await axios.put(`https://collabora-task-server.vercel.app/api/v1/submitted/update/${data._id}`, submitMarkData, {
+    await axios.put(`https://online-group-study-ab-server.vercel.app/api/v1/submitted/update/${data._id}`, submitMarkData, {
         headers: {
           'Content-Type': 'application/json'
         }

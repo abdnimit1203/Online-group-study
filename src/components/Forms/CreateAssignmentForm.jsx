@@ -35,7 +35,7 @@ const navigate = useNavigate()
     console.log("Assignment data: ", newAssignmentData);
     axios
       .post(
-        "https://collabora-task-server.vercel.app/api/v1/user/create-assignment/",
+        "https://online-group-study-ab-server.vercel.app/api/v1/user/create-assignment/",
         newAssignmentData,
        
       )

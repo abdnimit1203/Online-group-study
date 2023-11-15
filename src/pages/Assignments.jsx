@@ -34,14 +34,14 @@ const Assignments = () => {
     ],
     queryFn: async () => {
       const data = await fetch(
-        `https://collabora-task-server.vercel.app/api/v1/assignments?difficulty=${difficultyLevel}&page=${currentPage}&size=${postPerPage}`
+        `https://online-group-study-ab-server.vercel.app/api/v1/assignments?difficulty=${difficultyLevel}&page=${currentPage}&size=${postPerPage}`
       );
       return await data.json();
     },
   });
   useEffect(() => {
     fetch(
-      `https://collabora-task-server.vercel.app/api/v1/assignmentCount?difficulty=${difficultyLevel}`
+      `https://online-group-study-ab-server.vercel.app/api/v1/assignmentCount?difficulty=${difficultyLevel}`
     )
       .then((res) => res.json())
       .then((data) => setCount(data));
@@ -86,7 +86,7 @@ const Assignments = () => {
       }).then((result) => {
         if (result.isConfirmed) {
           axios
-            .delete(`https://collabora-task-server.vercel.app/api/v1/assignments/${id}`)
+            .delete(`https://online-group-study-ab-server.vercel.app/api/v1/assignments/${id}`)
             .then((res) => {
               console.log(res.data);
             });

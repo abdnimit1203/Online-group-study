@@ -10,7 +10,7 @@ const SubmittedAssignments = () => {
     queryKey: ["submitted-assignments"],
     queryFn: async () => {
       const data = await fetch(
-        `https://collabora-task-server.vercel.app/api/v1/submitted-assignments?status=pending`
+        `https://online-group-study-ab-server.vercel.app/api/v1/submitted-assignments?status=pending`
       );
       return await data.json();
     },
@@ -20,7 +20,7 @@ const SubmittedAssignments = () => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>ColabTask | Submitted Assignments</title>
       </Helmet>
       <div>
@@ -88,13 +88,11 @@ const SubmittedAssignments = () => {
                       {submits.status}
                     </td>
                     <td className="whitespace-nowrap px-4 py-2">
-                      <Link
-                        to={`/grading/${submits?._id}`}
-                        
-                      >
+                      <Link to={`/grading/${submits?._id}`}>
                         <motion.button
                           whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.9 }} className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
+                          whileTap={{ scale: 0.9 }}
+                          className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                         >
                           Give Mark
                         </motion.button>

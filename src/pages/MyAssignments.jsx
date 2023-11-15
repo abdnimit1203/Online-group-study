@@ -11,7 +11,7 @@ const MyAssignments = () => {
     queryKey: ["my-aasignments"],
     queryFn: async () => {
       const data = await fetch(
-        `https://collabora-task-server.vercel.app/api/v1/submitted-assignments?email=${user.email}`
+        `https://online-group-study-ab-server.vercel.app/api/v1/submitted-assignments?email=${user.email}`
       );
       return await data.json();
     },

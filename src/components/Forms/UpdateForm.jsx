@@ -38,7 +38,7 @@ const navigate = useNavigate();
 
 
 
-    await axios.put(`https://collabora-task-server.vercel.app/api/v1/user/update/${_id}`, updatedData, {
+    await axios.put(`https://online-group-study-ab-server.vercel.app/api/v1/user/update/${_id}`, updatedData, {
         headers: {
           'Content-Type': 'application/json'
         }
