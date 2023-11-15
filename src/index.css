@@ -1,0 +1,118 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+#logo {
+  font-family: "Alumni Sans Inline One", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 58, 250) 90%;
+  border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(112, 75, 248, 0.808) 90%;
+    
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: sans-serif !important;
+  font-size: 30px !important;
+  background-color: rgba(255, 255, 255, 0.329);
+  border-radius: 100%;
+
+  /* padding: 10px 20px; */
+
+ 
+  opacity: 1 !important;
+  padding: 10px 18px;
+  color: rgb(226, 220, 220);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  background-color: #ff6f61 !important;
+}
+.slick-next,
+.slick-prev {
+  /* top: 80% !important; */
+  padding-left: 10px !important;
+  display: absolute !important;
+  z-index: 100 !important;
+}
+.slick-prev {
+  left: 1% !important;
+}
+.slick-next {
+  right: 80px !important;
+}
+.slick-next:before {
+  content: "❯" !important;
+}
+.slick-prev:before {
+  content: "❮" !important;
+}
+.slick-arrow {
+  display: flex !important;
+  justify-items: end !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.85 !important;
+  color: #ff6f61 !important;
+}
+.slick-dots li button:before {
+  top: auto !important;
+  bottom: 100px !important;
+  content: "━" !important;
+  color: white !important;
+  font-size: 25px !important;
+  opacity: 0.75 !important;
+}
+/* Input number arrow hidden */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+/* Text Slection color */
+
+::selection {
+  background: rgba(112, 47, 233, 0.781); /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
