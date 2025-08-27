@@ -1,8 +1,8 @@
 # ColabTask - Online Group study website 
 
 - Live Server Links : 
-- [ColabTask - Firebase : https://online-group-study-fdf3b.web.app](https://online-group-study-fdf3b.web.app) 
-- [ColabTask - Netlify : https://online-study-group-ab.netlify.app](https://online-study-group-ab.netlify.app) 
+
+- [ColabTask - Netlify : https://colab-tasks-fe.netlify.app](https://colab-tasks-fe.netlify.app) 
 
 
 ## Main Features
